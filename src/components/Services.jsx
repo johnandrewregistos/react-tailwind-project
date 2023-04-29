@@ -10,17 +10,12 @@ import { fadeIn } from '../variant'
 const services = [
   {
     name: 'Freelancer',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ea autem cumque sit quibusdam maxime ipsam officia eos accusamus ipsum.',
-    link: 'Learn More',
-  },
-  {
-    name: 'Designer',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ea autem cumque sit quibusdam maxime ipsam officia eos accusamus ipsum.',
+    description: 'As a freelance web developer I am responsible for designing, building, and maintaining websites for clients. I work independently, often from home, and are responsible for managing my own time and workload. ',
     link: 'Learn More',
   },
   {
     name: 'Web Developer',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ea autem cumque sit quibusdam maxime ipsam officia eos accusamus ipsum.',
+    description: 'As a web developer I am responsible for designing, building, and maintaining websites for businesses, organizations, and individuals. I work collaboratively with designers, project managers, and other developers to create functional, visually appealing websites that meet the needs of clients and users.',
     link: 'Learn More',
   }
 ];
@@ -31,7 +26,7 @@ export function Services() {
       <div className="container mx-auto">
         <div className='flex flex-col lg:flex-row'>
           {/**Text & Images */}
-          <motion.div variants={fadeIn('right', 0.3)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0'>
+          <motion.div variants={fadeIn('right', 0.3)} initial="hidden" whileInView={'show'} viewport={{ once: false, amount: 0.3 }} className='flex-1  mb-12 lg:mb-0'>
             <h2 className="h2 text-accent mb-6">What I Do.</h2>
             <h3 className="h3 max-w-[455px] mb-16">I'm a Freelance Front-End Developer.</h3>
             <a href="#work">
@@ -44,18 +39,12 @@ export function Services() {
             <div className='flex-1'>
               {services.map((service, index)=> {
                 //destructure service
-                const {name, description, link} = service;
+                const {name, description} = service;
                 return (
-                    <div className='border-b border-white/20 h-[146px] mb-[38px] flex' key={index}>
+                    <div className='border-b border-white/20 h-auto mb-[38px] flex' key={index}>
                       <div className='max-w-[476px]'>
                         <h4 className='text-[20px] tracking-wider font-primary font-semibold mb-6'>{name}</h4>
                         <p className='font-secondary leading-tight'>{description}</p>
-                      </div>
-                      <div className='flex flex-col flex-1 items-end'>
-                        <a href="#" className='btn w-9 h-9 mb-[42px] flex justify-center items-center'>
-                          <BsArrowUpRight />
-                        </a>
-                        <a href="#" className='text-gradient text-sm'>{link}</a>
                       </div>
                     </div>
                   )
