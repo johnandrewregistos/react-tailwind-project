@@ -27,7 +27,7 @@ export const Work = () => {
               <button onClick={View} className='btn btn-sm'>View all projects</button>
             </div>
             {/** Image */}
-            <a href="https://johnandrewregistos.github.io/mrstudio/" target='_blank'>
+            <a href="https://johnandrewregistos.github.io/React-Ecommerce-Store/" target='_blank'>
             <div className='group relative overflow-hidden border-2 border-white/50 rounded-xl'>
               {/** overlay */}
               <div className='group-hover:bg-black/75 w-full h-full absolute z-40 transition-all duration-300'></div>
