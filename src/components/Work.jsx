@@ -39,7 +39,7 @@ export const Work = () => {
               </div>
               {/** Title */}
               <div className='absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50'>
-                <span className='text-3xl text-white'>MrStudio Website</span>
+                <span className='text-3xl text-white'>Drew Ecommerce Website</span>
               </div>
             </div>
             </a>
